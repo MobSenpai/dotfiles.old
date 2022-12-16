@@ -1,0 +1,47 @@
+#Aliases
+alias rm="rm -i"
+alias rf="rm -f"
+# fix obvious typo's
+alias cd..='cd ..'
+alias pdw="pwd"
+alias unin="sudo pacman -Rns"
+alias install="sudo pacman -S"
+alias sl="ls"
+
+## colorize the grep command output for ease of use (good for log files)
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+### git
+alias ga="git add ."
+alias gp="git push"
+alias gm="git commit"
+
+### system
+alias convert="magick convert"
+alias sxiv="sxiv -b -a"
+alias mytime="tty-clock -ct"
+alias update="sudo pacman -Syyu && paru -Syyu --noconfirm"
+alias v="nvim"
+alias utar="tar -zxvf"
+alias ls="exa -G --group-directories-first --icons"
+alias lsa="ls -a"
+alias ll="exa -l --group-directories-first --icons -a"
+alias lla="ll --tree --level=2"
+alias pacss="sudo pacman -Ss"
+alias pacs="sudo pacman -S"
+alias pacsi="sudo pacman -Si"
+alias yay="yay --aur"
+alias paru="paru --aur"
+alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+alias zsh="nvim $HOME/.config/zsh/.zshrc"
+alias c="clear"
+alias sprint="termdown 20m && echo SPRINT DONE && paplay /usr/share/sounds/freedesktop/stereo/complete.oga"
+alias sprint30="termdown 30m && echo SPRINT DONE && paplay /usr/share/sounds/freedesktop/stereo/complete.oga"
+alias poly="nvim .config/polybar/config"
+alias e="emacs -nw"
+alias pkg="expac --timefmt='%Y-%m-%d %T' '%l\t%n'|sort -n"
+alias pkgs="expac --timefmt='%Y-%m-%d %T' '%l\t%n'|sort -n | fzf"
+alias nvidia-settings="nvidia-settings --config $XDG_CONFIG_HOME/nvidia/settings"
+alias rmlink="find -xtype l -delete"

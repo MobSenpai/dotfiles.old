@@ -1,0 +1,5 @@
+#!/bin/sh
+# This file is used by display managers, I only want to manage one file.
+
+RUNWM=false
+source "$XDG_CONFIG_HOME/X11/xinitrc"

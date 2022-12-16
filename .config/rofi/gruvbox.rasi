@@ -1,0 +1,9 @@
+* {
+    /*bg:                             #00000000;*/
+    bg:                             #282828;
+    fg:                             #e6cb9d;
+    ac:                             #49413a71;
+    red: #E27878;
+    green: #A3BE8C;
+    background-color:             	@bg;
+}

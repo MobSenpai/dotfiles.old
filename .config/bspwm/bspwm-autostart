@@ -1,0 +1,20 @@
+#!/bin/bash
+# Compositor
+#runonce picom --experimental-backends
+runonce picom
+
+# Polkit agent
+runonce /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 
+
+# Bspswallow
+#pgrep bspswallow || bspswallow &
+
+# Lockscreen
+xset s 600 5
+runonce xss-lock -n 'systemctl suspend' -- betterlockscreen -l dimblur
+
+# Autostart apps
+#dex -a -s ~/.config/autostart &
+dex -a
+clipmenud
+#runonce xfce4-power-manager --daemon

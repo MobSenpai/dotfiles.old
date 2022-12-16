@@ -1,0 +1,21 @@
+#!/bin/bash
+# only source other files here
+#------------------------------
+THEME="gruvbox"
+
+# Configuration
+source "$XDG_CONFIG_HOME/bspwm/themes/$THEME/bspwm/$THEME"
+
+# Monitors
+source "$XDG_CONFIG_HOME/bspwm/bspwm-monitors"
+
+# Important Functions
+source "$HOME/.config/bspwm/bspwm-functions" wait
+
+# Application rules
+source "$XDG_CONFIG_HOME/bspwm/bspwm-rules"
+
+# Autostart
+source "$XDG_CONFIG_HOME/bspwm/themes/$THEME/bspwm/$THEME.sh"
+source "$XDG_CONFIG_HOME/bspwm/bspwm-autostart" wait
+#source "$XDG_CONFIG_HOME/bspwm/bspwm-postload"

@@ -1,0 +1,14 @@
+# Floating windows
+bspc rule -r "*"
+setfloat Lxappearance
+setfloat Arandr
+setfloat Arcolinux-welcome-app.py
+setfloat Nm-connection-editor
+setfloat Xarchiver
+setfloat Xfce4-power-manager-settings
+
+# Docks
+setdock Plank
+
+# Workspace
+setworkspace 2 Brave-browser
